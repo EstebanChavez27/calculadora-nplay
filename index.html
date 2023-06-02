@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Calculadora de días sin servicio</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <nav>
+        <img src="./img/logo main.png" alt="logo">
+    </nav>
+    <main>
+        <h1>Calculadora de días sin servicio</h1>
+        <label for="montoConIVA">Ingrese el monto con IVA:</label>
+        <input type="number" id="montoConIVA" step="0.01"><br><br>
+        <label for="montoSinIVA">Ingrese el monto sin IVA:</label>
+        <input type="number" id="montoSinIVA" step="0.01"><br><br>
+        <button class="button" onclick="calcularIVA()">Calcular</button>
+        
+        <div id="resultado"></div>
+        
+        <label for="diasSeleccionados">Seleccione los días del mes:</label>
+        <select id="diasSeleccionados">
+          <option value="28">28 días</option>
+          <option value="29">29 días</option>
+          <option value="30">30 días</option>
+          <option value="31">31 días</option>
+        </select><br><br>
+        <label for="multiplicador">Ingrese la cantidad de días a ajustar:</label>
+        <input type="number" id="multiplicador" step="0.01"><br><br>
+        <button class="button" onclick="calcularTotalMensual()">Calcular total a ajustar</button><br><br>
+        <button class="button2" onclick="limpiarFormulario()">Limpiar</button><br><br>
+        <div id="totalMensual"></div>
+    </main>
+  
+
+  <footer id="contacto">
+    Creado por <a href="https://estebanchavez27.github.io/MiPortafolio/" target="_blank">Esteban Chávez</a> - <a href="mailto:estebanchavezdev@gmail.com" target="_blank">estebanchavezdev@gmail.com</a>
+</footer>
+
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
